@@ -9,7 +9,7 @@ function wishToggle() {
 }
 </script>
 
-<jsp:include page="header.jsp"></jsp:include>
+<jsp:include page="<%= request.getContextPath()%>/WEB-INF/common/header.jsp"></jsp:include>
 
 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
 	
@@ -167,5 +167,5 @@ function wishToggle() {
 </div>
 <%-- 베스트셀러 메뉴 끝 --%>
 
-<jsp:include page="footer.jsp"></jsp:include>
+<jsp:include page="<%= request.getContextPath()%>/WEB-INF/common/footer.jsp"></jsp:include>
 
